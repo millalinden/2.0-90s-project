@@ -94,10 +94,12 @@ body{
 /* Components */
 
 .site-head{
-    background-image: url(images/blackwhite.png);
+    background:radial-gradient(circle, #9932cc, rgb(188, 89, 237) );
     text-align: center;
     padding: 2rem;
     margin: var(--margin-primary);
+    border-style: outset;
+    border-color: #b356e2;
 }
 
 @media (max-width: 320px){
@@ -184,8 +186,8 @@ body{
 .site-nav__item a{
     text-decoration: none;
     transition: transform 1s;
-    color: rgb(254, 254, 254);
-    background:#c70ef5;
+    color: rgb(0, 0, 0);
+    background:var(--color-primary);
     padding:0.5rem;
 }
 
@@ -234,7 +236,6 @@ p:hover{
     box-shadow: var(--shadow);
     border-style: solid;
     border-width: 0.5rem;
-    margin-bottom: 3rem;
 }
 
 .style-gen__top{
@@ -274,6 +275,13 @@ p:hover{
 
 .aside-shops__list{
     list-style: none;
+    display:flex;
+}
+
+@media (min-width:1100px){
+    .aside-shops__list{
+        display: block;
+    }
 }
 
 h2{
@@ -312,16 +320,11 @@ footer{
     background: var(--color-primary);
     }
 
-
-@media (max-width:425px){
-    .footer-gallery{
-        display:grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .aside-shops__list{
-        display:flex;
-        flex-wrap: wrap;
-    }
+.footer-gallery{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Inspiration site*/
