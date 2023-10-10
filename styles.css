@@ -246,6 +246,7 @@ p:hover{
     gap: 5rem;
     padding-left:0.5rem;
     padding-right: 2rem;
+    max-width:100%;
 }
 
 .style-gen__bottom{
