@@ -249,6 +249,10 @@ p:hover{
     max-width:100%;
 }
 
+.img-top{
+    max-width: 100%;
+}
+
 .style-gen__bottom{
     display: flex;
     overflow-y: scroll;
