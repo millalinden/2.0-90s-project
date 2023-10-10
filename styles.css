@@ -94,7 +94,7 @@ body{
 /* Components */
 
 .site-head{
-    background:radial-gradient(circle, #9932cc, rgb(188, 89, 237) );
+    background:radial-gradient(circle, #9932cc, rgb(188, 89, 237));
     text-align: center;
     padding: 2rem;
     margin: var(--margin-primary);
