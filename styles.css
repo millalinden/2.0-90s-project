@@ -102,7 +102,7 @@ body{
     border-color: #b356e2;
 }
 
-@media (max-width: 320px){
+@media (max-width: 300px){
     .site-head{
         position: sticky;
         top:0;
