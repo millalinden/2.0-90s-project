@@ -337,7 +337,6 @@ footer{
 .inspo-articles{
     justify-content: space-between;
     background-image: url(images/1008.png);
-    padding: 1rem;
     padding-top: 2rem;
     margin-bottom: 1rem;
     width: 80%;
@@ -349,16 +348,15 @@ footer{
 .inspo-articles__one,
 .inspo-articles__two,
 .inspo-articles__three {
-  flex: 1;
-  background-color: rgb(255, 255, 255);
-  padding: 2rem;
-  height: 30rem;
-  margin: 0 1rem; 
-  margin-bottom: 2rem;
-  border-radius: 1rem;
-  border-width: 0.5rem;
-  border-color: blue;
-  border-style: solid;
+    flex: 1;
+    padding: 2rem;
+    height: 30rem;
+    margin: 0 1rem; 
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    border-width: 0.5rem;
+    border-color: blue;
+    border-style: solid;
 }
 
 @media (min-width: 768px){
@@ -431,7 +429,6 @@ h3 .heading-highlight{
     line-height: 2.5rem;
 }
 
-
 .inspo-article__hover {
     display: none;
     position: absolute;
@@ -439,8 +436,8 @@ h3 .heading-highlight{
     left: 0;
     background-color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding:3rem;
-    font-size: 1rem;
+    padding:3.2rem;
+    font-size: 0.8rem;
 }
 
 .inspo-articles__one:hover .inspo-article__hover{
