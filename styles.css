@@ -102,7 +102,7 @@ body{
     border-color: #b356e2;
 }
 
-@media (max-width: 300px){
+@media (max-width: 200px){
     .site-head{
         position: sticky;
         top:0;
@@ -339,7 +339,6 @@ footer{
     background-image: url(images/1008.png);
     padding: 1rem;
     padding-top: 2rem;
-    border-radius: 0 0 1rem 1rem;
     margin-bottom: 1rem;
     width: 80%;
     margin-left: auto;
@@ -347,9 +346,9 @@ footer{
     margin-top: 0.5rem;
 }
 
-.article-one,
-.article-two,
-.article-three {
+.inspo-articles__one,
+.inspo-articles__two,
+.inspo-articles__three {
   flex: 1;
   background-color: rgb(255, 255, 255);
   padding: 2rem;
@@ -357,14 +356,15 @@ footer{
   margin: 0 1rem; 
   margin-bottom: 2rem;
   border-radius: 1rem;
+  border-width: 0.5rem;
   border-color: blue;
   border-style: solid;
 }
 
 @media (min-width: 768px){
-    .article-one,
-    .article-two,
-    .article-three {
+    .inspo-articles__one,
+    .inspo-articles__two,
+    .inspo-articles__three {
         height:20rem;
     }
 }
@@ -383,30 +383,45 @@ footer{
     justify-content: center;
     align-items:center;
     }
-    .article-one,
-    .article-two,
-    .article-three {
+    .inspo-articles__one,
+    .inspo-articles__two,
+    .inspo-articles__three {
         height:30rem;
     }
 }
 
 
-.article-one{
+.inspo-articles__one{
     background-image: url(images/Skateboarder-90s-Fashion-Men.jpg);
+    background-size: cover;
     background-position: center;
     font-size: 1rem;
+    position: relative;
+    cursor: pointer;
+    background-color: white;
+    overflow: hidden;
 }
 
-.article-two{
+.inspo-articles__two{
     background-image:url(images/031e62b1-4852-4f6b-82bd-c23a89eec4a0.jpeg);
-    background-position:bottom; 
+    background-size: cover;
+    background-position:center; 
     font-size: 1rem;
+    position: relative;
+    cursor: pointer;
+    background-color: white;
+    overflow: hidden;
 }
 
-.article-three{
+.inspo-articles__three{
     background-image: url(images/90s-fashion-234799-1567428489955-image.700x0c.jpg);
-    background-position: bottom;
+    background-size: cover;
+    background-position: center;
     font-size: 1rem;
+    position: relative;
+    cursor: pointer;
+    background-color: white;
+    overflow: hidden;
 }
 
 h3 .heading-highlight{
@@ -414,4 +429,28 @@ h3 .heading-highlight{
     color:rgb(255, 255, 255);
     padding: 0.5rem;
     line-height: 2.5rem;
+}
+
+
+.inspo-article__hover {
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding:3rem;
+    font-size: 1rem;
+}
+
+.inspo-articles__one:hover .inspo-article__hover{
+    display: block;
+}
+
+.inspo-articles__two:hover .inspo-article__hover{
+    display: block;
+}
+
+.inspo-articles__three:hover .inspo-article__hover{
+    display: block;
 }
